@@ -1,0 +1,8 @@
+{
+    "test":
+    {
+        "date": "localStorage.getItem()",
+        "lieux": "localStorage.getItem()",
+        "comment": "localStorage.getItem()"
+    }
+}

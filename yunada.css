@@ -1,0 +1,90 @@
+body {
+    background-color: #e4e2dd;
+    font-family : ("Open Sans")
+}
+
+h2 {
+    color: #e89b9b;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: none;
+    height: 400px;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+h1 {
+    color: #e89b9b;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+li {
+    color: #ffffff;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+    
+
+img {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    
+  }
+
+.date {
+    font-family: "Times New Roman";
+    color: #000000;
+}
+
+
+.save {
+    margin-left: 400px;
+}
+
+
+.logo{
+    display : flex;
+    justify-content: space-around;
+    
+}
+
+
+.photo {
+    display : flex;
+    justify-content: center;
+}
+
+.imageparis{
+    display : flex;
+    align-items : center;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    height: 200px;
+    justify-content: center;
+}
+
+nav p {
+    font-size: 3rem;
+    color :#e89b9b;
+}
+

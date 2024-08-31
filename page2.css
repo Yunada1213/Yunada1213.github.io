@@ -1,0 +1,155 @@
+
+body {
+    background-color: #e4e2dd;
+    font-family : ("papyrus")
+}
+
+h1 {
+    color: #e89b9b;
+    font-family:fantasy;
+    text-align: center;
+    justify-content: center;
+
+}
+
+p {
+    color: #e89b9b;
+}
+
+li {
+    color: #ffffff;
+}
+
+h2 {
+    color: #e89b9b;
+    border-style: ridge;
+    border-width: thick;
+    border-color: #e89b9b;
+
+
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+
+    border-width: 5px;
+    box-sizing: border-box;    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+
+}
+    
+
+img {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    
+  }
+
+.date {
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+
+#jesaispas {
+    display : flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.bow{
+    display : flex;
+    justify-content: flex-end;
+    align-items : flex-start
+}
+
+.logo{
+    display : flex;
+    justify-content: space-around;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    height: 200px;
+    justify-content: center;
+    color :#e89b9b;
+}
+
+nav p {
+    font-size: 3rem;
+    color :#e89b9b;
+}
+
+button {
+  appearance: button;
+  background-color: #e89b9b;
+  border: solid transparent;
+  border-radius: 5px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50%;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #e89b9b;
+  border: solid transparent;
+  border-radius: 5px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:main,
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+button:active {
+  border-width: 4px 0 0;
+  background: none;
+}

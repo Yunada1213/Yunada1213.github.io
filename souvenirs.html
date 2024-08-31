@@ -1,0 +1,101 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="yunada.css">
+        <link rel="icon" href="coquette-bow-removebg-preview.png">
+    </head>
+
+    <body id="body">
+        <div class="logo">
+            <img src="logo.png" width="400" />
+        </div>
+
+        <h1> C'était trop bien ! </h1>
+
+        <nav>
+            <a href="site_yunada.html"><p>
+                Home
+            </p></a>    
+            <a href="page2.html"><p>
+                +
+            </p></a>
+
+            <a href="souvenirs.html"> <p>
+                Souvenirs
+            </p></a>
+
+            <a href="questions.html"> <p>
+                ?
+            </a> </p>
+
+        </nav>
+
+        <div>
+
+            <h2>
+    
+                <!--<p style="float:none">
+                    Date :
+                    <input type="date" class="date" id="date">
+    
+                </p>
+    
+    
+                <p> </p>
+            -->
+                <ul id="souvenirslist">
+                    <!--<li>
+                        <p style="float:none">
+                            Lieux :
+                            <textarea id="lieux"> </textarea>
+                        </p>
+                    </li>
+    
+    
+                    <li>
+                        <p style="float:none">
+                            Commentaire :
+                        </p>
+                            <textarea id="comment" cols="30" rows="5"> </textarea>
+                        
+                    </li>-->
+    
+
+                </ul>
+                <p> </p>
+                
+            </h2>
+            
+        </div>
+        <div id="caca"></div>
+    
+        <script type="text/javascript">
+            var oui = document.getElementById("souvenirslist")
+            for(var i=0, len=localStorage.length; i < len; i = i + 3) {
+                var n = document.createElement("ul")
+                //n.classList.add("salade")
+                var date = document.createElement("p")
+                date.innerHTML = localStorage.getItem(i)
+                n.appendChild(date)
+                var lieu = document.createElement("p")
+                var lieubox = document.createElement("textarea")
+                lieubox.innerHTML = localStorage.getItem(i+1)
+                lieu.appendChild(lieubox)
+                n.appendChild(lieu)
+                var note = document.createElement("p")
+                var comment = document.createElement("textarea")
+                comment.innerHTML = localStorage.getItem(i+2)
+                note.appendChild(comment)
+                n.appendChild(note)
+                oui.appendChild(n)
+                oui.appendChild(document.createElement("br"))
+            }
+        </script>
+
+
+
+
+    </body>
+
+</html>

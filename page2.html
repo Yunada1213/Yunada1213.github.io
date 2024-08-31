@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="page2.css">
+        <link rel="icon" href="coquette-bow-removebg-preview.png">
+    </head>
+
+    <body>
+        <div class="logo">
+            <img src="logo.png" width="400" />
+        </div>
+
+        <h1>Alors, on va où ? On mange quoi ?</h1>
+
+        <nav>
+            <a href="site_yunada.html"><p>
+                Home
+            </p></a>      
+
+            <a href="page2.html"><p>
+                +
+            </p></a>
+
+            <a href="souvenirs.html"> <p>
+                Souvenirs
+            </p></a>
+
+            <a href="questions.html"> <p>
+                ?
+            </a> </p>
+            
+        </nav>
+
+        </nav>
+    </body>
+
+    <div>
+
+        <h2>
+
+            <p style="float:none">
+                Date :
+                <input type="date" class="date" id="date">
+
+            </p>
+
+
+            <p> </p>
+
+            <ul>
+                <li>
+                    <p style="float:none">
+                        Lieux :
+                        <input id="lieux">
+                    </p>
+                </li>
+
+
+                <li>
+                    <p style="float:none">
+                        Commentaire :
+                    </p>
+                        <textarea id="comment" cols="30" rows="5"> </textarea>
+                    
+                </li>
+
+                <div id="jesaispas">
+                <button id="save" class="save">SAVE</button>
+                </div>
+            </ul>
+            <p> </p>
+        </h2>
+
+        <script type="text/javascript">
+            var size = localStorage.length
+            console.log(size)
+
+
+            document.getElementById("date").value = localStorage[size - 3]
+            document.getElementById("lieux").value = localStorage[size - 2]
+            document.getElementById("comment").value = localStorage[size -1]
+
+            document.getElementById("save").onclick = function click() {
+
+                // 1. RECUPERER CE QUI IL Y A DANS LE LOCAL STORAGE
+                // 2. RECUPERER CE QUI A ETE ENTRE
+                // 3. TU FUSIONNE LES 2
+                // 4. TU MET DANS LE LOCAL STORAGE
+      
+
+                localStorage.setItem(size, document.getElementById("date").value)
+                localStorage.setItem(size + 1, document.getElementById("lieux").value)
+                localStorage.setItem(size + 2, document.getElementById("comment").value)
+            }
+
+                
+
+        </script>
+
+        
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("test").innerText = localStorage.getItem("comment")
+            }
+        </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
